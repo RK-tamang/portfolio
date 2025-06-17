@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './global.css';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -10,21 +11,35 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Languages from './components/Languages';
 import Tools from './components/Tools';
+import BlogsList from './components/BlogsList';
+import BlogPost from './components/BlogPost';
+import NotFound from './components/NotFound';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Hero />
-      <About />
-      <Languages />
-      {/* <WorkExperience /> */}
-      <Skills />
-      <Tools />
-      <Projects />
-      <Contact />
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+        <Routes>
+          <Route path="/" element={
+            <>
+              <Hero />
+              <About />
+              <Languages />
+              {/* <WorkExperience /> */}
+              <Skills />
+              <Tools />
+              <Projects />
+              <Contact />
+            </>
+          } />
+          <Route path="/blogs" element={<BlogsList />} />
+          <Route path="/blogs/:id" element={<BlogPost />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

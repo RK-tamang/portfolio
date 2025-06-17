@@ -1,0 +1,10 @@
+autoprefixer
+postcss
+react
+react-dom
+react-icons
+react-router-dom
+react-scripts
+react-scroll
+tailwindcss
+web-vitals
