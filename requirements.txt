@@ -1,0 +1,8 @@
+"autoprefixer"
+"postcss"
+"react"
+"react-dom"
+"react-icons"
+"react-scripts"
+"tailwindcss"
+"web-vitals"
