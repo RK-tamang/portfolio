@@ -1,0 +1,90 @@
+/* Set up grid pattern on black background */
+.grid-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: 40px 40px; /* Grid size */
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+}
+
+/* Main content text styling */
+.text-gradient {
+  position: relative;
+  z-index: 10;
+  background: linear-gradient(to bottom, #fff, #aaa);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 5rem; /* Large font size */
+  font-weight: bold; /* Bold text */
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* Responsive font size */
+.text-gradient.sm {
+  font-size: 7rem;
+}
+
+/* Text and link styling */
+.text-xl {
+  font-size: 1.25rem;
+  color: #ddd; /* Slightly lighter gray */
+}
+
+.text-blue-500 {
+  color: #3b82f6;
+}
+
+.text-blue-700 {
+  color: #2563eb;
+}
+
+.text-blue-500:hover {
+  color: #2563eb;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+/* Full screen setup */
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.bg-black {
+  background-color: #000000;
+}
+
+/* Centering and z-index for overlay */
+.relative {
+  position: relative;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+/* Text alignment */
+.text-center {
+  text-align: center;
+}
